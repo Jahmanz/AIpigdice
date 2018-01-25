@@ -11,17 +11,12 @@ var player2totalScore = [0,0]; //totalScore[0] = (whatever you player 1 score to
 var player2roundScore = 0;
 
 
-
 $(document).ready(function() {
   $("button#player1").click(function() {
     var newRand = randomNumber();
     player1roundScore += newRand;
     $("#player1Roll").text(newRand);
     $("#player1Score").text(player1roundScore);
-
-    // if (newRand === 1)
-    //   $
-    //   alert("")
 
     if (player1roundScore === 100) {
       alert("You Win!")
